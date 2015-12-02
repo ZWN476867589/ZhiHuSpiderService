@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database Name="main" EntityNamespace="MainContext" ContextNamespace="MainContext" Class="MainDataContext" xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" ed:Guid="d4cf085b-5eff-40b8-9a76-ddeef55831cd" Provider="Devart.Data.SQLite.Linq.Provider.SQLiteDataProvider, Devart.Data.SQLite.Linq" Extended="true" xmlns="http://schemas.devart.com/linqconnect/mapping">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=E:\MyCode\ZhiHuSpiderService\ZhiHuSpider.db" Provider="Devart.Data.SQLite" />
+  <Table Name="&quot;main&quot;.SysDict" Member="SysDicts">
+    <Type Name="SysDict" ed:Guid="453dad84-fd1e-41bb-82a8-1574107ea8ce">
+      <Column Name="&quot;RowID&quot;" Member="RowID" Type="System.Int64" AutoSync="OnInsert" DbType="INTEGER NOT NULL" IsReadOnly="true" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Always" ed:ValidateRequired="true" ed:Guid="59232cfd-c670-4bd4-82e5-869904d20d65" />
+      <Column Name="DictName" Type="System.String" DbType="TEXT NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="2cda0493-212e-44cf-82e9-55215bb84995" />
+      <Column Name="DictValue" Type="System.String" DbType="TEXT NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="2166288c-4894-40d7-ba26-a80eacb4c3e6" />
+      <Column Name="Remark" Type="System.String" DbType="TEXT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="d52b0c0a-636a-4896-8f5b-3bd47ff578f9" />
+      <Column Name="DictCode" Type="System.String" DbType="TEXT NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="833946d6-83e0-4a60-9511-6d92b77fd142" />
+      <Column Name="ModefyDate" Type="System.String" DbType="TEXT NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="b437294e-4fed-4ed8-a348-0329dab89fe8" />
+    </Type>
+  </Table>
+  <Table Name="&quot;main&quot;.QuestionInfo" Member="QuestionInfos">
+    <Type Name="QuestionInfo" ed:Guid="1eb5310f-e1d5-423c-9e6e-830bea0da2d1">
+      <Column Name="&quot;RowID&quot;" Member="RowID" Type="System.Int64" AutoSync="OnInsert" DbType="INTEGER NOT NULL" IsReadOnly="true" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Always" ed:ValidateRequired="true" ed:Guid="c7be4e52-4522-4d4d-8c96-ce4d16cafdef" />
+      <Column Name="QuestionID" Type="System.Int64" DbType="INTEGER NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="55f6bf05-513d-44ed-bf73-a35af91c2782" />
+      <Column Name="QuestionTitle" Type="System.String" DbType="TEXT NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="d7edd731-e1ed-45d1-937e-1cc98e31c821" />
+      <Column Name="QuestionUrl" Type="System.String" DbType="TEXT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="7653c373-1b46-46cb-af5e-7b24cb882bb2" />
+      <Column Name="QuestionDetail" Type="System.String" DbType="TEXT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="375ae009-ef17-4344-b783-11a71295e2e4" />
+      <Column Name="QuestionTimeStamp" Type="System.Int64" DbType="INTEGER" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="5745c8dd-7a18-42cd-b058-2d1ae7ba2c6b" />
+      <Column Name="BelongsTopic" Type="System.String" DbType="TEXT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="f6a777d3-92d0-4472-9a27-68615ea53b70" />
+      <Column Name="ModefiedTime" Type="System.String" DbType="TEXT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="4c1dafe7-e498-4506-9b6d-c6b1b17411ca" />
+    </Type>
+  </Table>
+  <Table Name="&quot;main&quot;.CollectionInfo" Member="CollectionInfos">
+    <Type Name="CollectionInfo" ed:Guid="fbdfe932-a418-41e5-a816-13416215c822">
+      <Column Name="&quot;RowID&quot;" Member="RowID" Type="System.Int64" AutoSync="OnInsert" DbType="INTEGER NOT NULL" IsReadOnly="true" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Always" ed:ValidateRequired="true" ed:Guid="6a6c8713-c2d8-46d8-9574-53a44c787d85" />
+      <Column Name="CollectionID" Type="System.Int64" DbType="INTEGER NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="cd821c4d-18a4-48d4-873f-8b42fce8e141" />
+      <Column Name="CollectionName" Type="System.String" DbType="TEXT NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="539b0943-d961-452c-9b12-2350fa76e992" />
+      <Column Name="CollectionUrl" Type="System.String" DbType="TEXT NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="6fc6259b-98cc-4849-9922-f459c0edca91" />
+      <Column Name="FllowersCount" Type="System.Int64" DbType="INTEGER NOT NULL" CanBeNull="false" UpdateCheck="Never" DefaultValue="0" ed:ValidateRequired="true" ed:Guid="10fadd44-4b05-47ef-bbd1-d1e5bc41afa8" />
+      <Column Name="QuestionCount" Type="System.Int64" DbType="INTEGER" CanBeNull="true" UpdateCheck="Never" DefaultValue="0" ed:ValidateRequired="false" ed:Guid="5a46e5fc-2cde-430f-85c4-6946e4805930" />
+      <Column Name="CreatorName" Type="System.String" DbType="TEXT NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="82cce740-2ee2-401a-9e11-91d7594282d3" />
+      <Column Name="CreatorHash" Type="System.String" DbType="TEXT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="fc7a83b0-de37-4e3a-8d86-7a28324e0f0a" />
+      <Column Name="ModefiedTime" Type="System.String" DbType="TEXT NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="b8dbc26a-7c15-4d3d-b0c8-d677408d5383" />
+    </Type>
+  </Table>
+  <Table Name="&quot;main&quot;.CollectionQuestionAndAnswer" Member="CollectionQuestionAndAnswers">
+    <Type Name="CollectionQuestionAndAnswer" ed:Guid="8fdd6002-51e2-4708-bbc6-0c03a4c55a80">
+      <Column Name="&quot;RowID&quot;" Member="RowID" Type="System.Int64" AutoSync="OnInsert" DbType="INTEGER NOT NULL" IsReadOnly="true" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Always" ed:ValidateRequired="true" ed:Guid="88052de6-0f1a-4096-8c9e-7fe0c3f3fe59" />
+      <Column Name="CollectionID" Type="System.Int64" DbType="INTEGER NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="ecb6b79d-e281-4d31-b79c-14e39597f246" />
+      <Column Name="QuestionID" Type="System.Int64" DbType="INTEGER NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="d3d59bbf-9639-4b18-99df-a937aad95cc4" />
+      <Column Name="AnswerID" Type="System.Int64" DbType="INTEGER NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="d57f26a8-73ba-4346-8cf7-2e1378d0e765" />
+      <Column Name="ModefiedTime" Type="System.String" DbType="TEXT NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="6d61de54-942c-4195-8ec6-b610f05f1943" />
+    </Type>
+  </Table>
+</Database>
