@@ -70,6 +70,10 @@
       <Project>{3D468574-C2A8-4033-877F-D5D3A50012D6}</Project>
       <Name>ZhiHuSpider.DataBase</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ZhiHuSpider.MongoBusiness\ZhiHuSpider.MongoBusiness.csproj">
+      <Project>{4B287AA1-4784-49FC-BDBD-848BD3596DF4}</Project>
+      <Name>ZhiHuSpider.MongoBusiness</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="CollectionID.txt">

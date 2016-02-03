@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database Name="main" EntityNamespace="MainContext" ContextNamespace="MainContext" Class="MainDataContext" xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" ed:Guid="d4cf085b-5eff-40b8-9a76-ddeef55831cd" Provider="Devart.Data.SQLite.Linq.Provider.SQLiteDataProvider, Devart.Data.SQLite.Linq" Extended="true" xmlns="http://schemas.devart.com/linqconnect/mapping">
-  <Connection Mode="ConnectionString" ConnectionString="Data Source=E:\MyCode\ZhiHuSpiderService\ZhiHuSpider.db" Provider="Devart.Data.SQLite" />
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=E:\MyCode\ZhiHuSpiderService\trunk\ZhiHuSpider.db" Provider="Devart.Data.SQLite" />
   <Table Name="&quot;main&quot;.SysDict" Member="SysDicts">
     <Type Name="SysDict" ed:Guid="453dad84-fd1e-41bb-82a8-1574107ea8ce">
       <Column Name="&quot;RowID&quot;" Member="RowID" Type="System.Int64" AutoSync="OnInsert" DbType="INTEGER NOT NULL" IsReadOnly="true" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Always" ed:ValidateRequired="true" ed:Guid="59232cfd-c670-4bd4-82e5-869904d20d65" />
